@@ -1,0 +1,82 @@
+:root{
+    --top_corner1: 2%;
+    --top_corner2: 2%;
+    --top_corner3: -2%;
+     --top_corner4: -2%;
+
+    --right_corner1: 0.5%;
+    --left_corner2: 0.5%;
+    --left_corner3: 0.5%;
+    --right_corner4: 0.5%;
+    --border_size : 2px;
+    --outline_size : 1px;
+    --outline-offset : -5px;
+    --border-bottom-left-radius: 0px;
+    --border-top-left-radius: 0px;
+    --border-bottom-right-radius: 0px;
+    --border-top-right-radius: 0px;
+    --height: 100px;
+    --width: 400px;
+    --display-top-left: inline-block;
+    --display-top-right :  inline-block;
+    --display-bottom-right : inline-block;
+    --display-bottom-left : inline-block;
+
+
+    
+}
+
+.doubledborder {
+    position: relative;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    border: var(--border_size) solid #9c6e3f;
+    outline:var(--outline_size) solid #9c6e3f;
+    outline-offset:var(--outline-offset);
+    border-bottom-left-radius: var(--border-bottom-left-radius);
+    border-top-left-radius: var(--border-top-left-radius);
+    border-top-right-radius: var(--border-top-right-radius);
+    border-bottom-right-radius: var(--border-bottom-right-radius);
+
+    background: rgba(33, 26, 36, 0.9);
+    background-size: cover;
+
+}
+.canvas0{
+    display: var(--display-top-right);
+    position: absolute;   
+    top: var(--top_corner1);
+    right: var(--right_corner1);
+
+    height: 100px;
+}
+.canvas1{
+    display: var(--display-top-left);
+    position: absolute;   
+    top: var(--top_corner2);
+    left: var(--left_corner2);
+    height: 100px;
+  
+}
+
+.canvas2{
+    display:  var(--display-bottom-left);
+    position: absolute;   
+    top: var(--top_corner3);
+    left: var(--left_corner3);
+
+    height: 100px;
+    transform: scale(1,-1); 
+}
+.canvas3{
+    display: var(--display-bottom-right);
+    position: absolute;   
+    top: var(--top_corner4);
+    right: var(--right_corner4);
+    height: 100px;
+
+    transform: scale(1,-1); 
+
+}
+

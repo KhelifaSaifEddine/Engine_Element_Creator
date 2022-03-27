@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sliders.css">
+
+</head>
+<body>
+    <div class="doubledborder">
+        <canvas class="canvas1"></canvas> 
+        <canvas class="canvas0"></canvas> 
+        <canvas class="canvas3"></canvas> 
+        <canvas class="canvas2"></canvas>
+
+    </div> 
+    <div class="sliderwrapper">
+        
+        <div class="sliders_corners_adjust">
+            <h2>CORNERS</h1>
+            <label for="">Corner_Top_right ---> TOP MOVEMENT</label>
+            <input class="slider_text"  order = "1"  type="number" step="1" value="95"></input><input class="range_slider" order = "1" type="range" min="0" max="100" value="95">
+            <label for="">Corner_Top_left ---> TOP MOVEMENT</label>
+            <input class="slider_text"  order = "2"  type="number" step="1" value="90"></input><input class="range_slider" order = "2" type="range"  min="0" max="100" value="90">
+            <label for="">Corner_Bottom_left ---> TOP MOVEMENT</label>
+            <input class="slider_text"  order = "3" type="number" step="1" value="75"></input><input class="range_slider" order = "3" type="range"  min="0" max="100" value="75">
+            <label for="">Corner_Bottom_right ---> TOP MOVEMENT</label>
+            <input class="slider_text"  order = "4" type="number" step="1" value="85"></input><input class="range_slider" order = "4" type="range"  min="0" max="100" value="85">
+            <label for="">Corner_Top_right ---> Left MOVEMENT</label>
+            <input class="slider_text"  order = "5" type="number" step="1" value="0"></input><input class="range_slider" order = "5" type="range"  min="0" max="400" value="0">
+            <label for="">Corner_Top_left ---> Right MOVEMENT</label>
+            <input class="slider_text"  order = "6" type="number" step="1" value="30"></input><input class="range_slider" order = "6" type="range" min="1" max="400" value="30">
+            <label for="">Corner_Bottom_left ---> Right MOVEMENT</label>
+            <input class="slider_text"  order = "7" type="number" step="1" value="30"></input><input class="range_slider" order = "7" type="range" min="1" max="400" value="30">
+            <label for="">Corner_Bottom_right ---> Left MOVEMENT</label>
+            <input class="slider_text"  order = "8" type="number" step="1" value="30"></input><input class="range_slider" order = "8" type="range" min="1" max="400" value="30">
+
+        </div>
+        <div class="sliders_corners_numbers">
+            <h2>CORNERS/BORDER/OUTLINE</h1>
+            <label for="">BORDER SIZE</label>
+            <input class="slider_text"  order = "9" type="number" step="1" min="0" max="4" value="0"></input><input class="range_slider" order = "9" type="range" min="0" max="4" value="4">
+            <label for="">OUTLINE SIZE</label>
+            <input class="slider_text"  order = "10" type="number" step="1" min="0" max="4" value="2"></input><input class="range_slider" order = "10" type="range" min="0" max="4" value="2">
+            <label for="">OUTLINE OFFSET</label>
+            <input class="slider_text"  order = "11" type="number" step="1" min="-10" max="10" value="-2"></input><input class="range_slider" order = "11" type="range" min="-10" max="10" value="-2">
+            <label for="">CORNERS CHECKLIST </label>
+            <div>
+                <input class = "check_corner" type="checkbox" order = "0" value="display-top-left"><label>Left-top</label>.
+                <input class = "check_corner" type="checkbox" order = "1" value="display-top-right"><label>Right-top</label>
+                <input class = "check_corner" type="checkbox" order = "2" value="display-bottom-right"><label>Right-bottom</label>
+                <input class = "check_corner" type="checkbox" order = "3" value="display-bottom-left"><label>Left-bottom</label>
+            </div>
+
+        </div>
+        <div class = "sliders_background">
+            <h2>BACKGROUND</h1>
+            <label for="">BORDER RADUIS BOTTOM LEFT </label>
+            <input class="slider_text"  order = "12" type="number" step="1" min="0" max="20" value="0"></input><input class="range_slider" order = "12" type="range" min="0" max="20" value="2">
+            <label for="">BORDER RADUIS TOP LEFT </label>
+            <input class="slider_text"  order = "13" type="number" step="1" min="0" max="20" value="0"></input><input class="range_slider" order = "13" type="range" min="0" max="20" value="2">
+            <label for="">BORDER RADUIS BOTTOM RIGHT </label>
+            <input class="slider_text"  order = "14" type="number" step="1" min="0" max="20" value="0"></input><input class="range_slider" order = "14" type="range" min="0" max="20" value="2">
+            <label for="">BORDER RADUIS TOP RIGHT </label>
+            <input class="slider_text"  order = "15" type="number" step="1" min="0" max="20" value="0"></input><input class="range_slider" order = "15" type="range" min="0" max="20" value="2">
+            <label for="">HEIGHT </label>
+            <input class="slider_text"  order = "16" type="number" step="1" min="0" max="400" value="0"></input><input class="range_slider" order = "16" type="range" min="0" max="400" value="1000">
+            <label for="">WIDTH </label>
+            <input class="slider_text"  order = "17" type="number" step="1" min="0" max="400" value="0"></input><input class="range_slider" order = "17" type="range" min="0" max="400" value="1000">
+
+        </div>
+        <button class="export" >EXPORT</button>
+    </div>
+
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="sliders.js"></script>
+
+</body>
+</html>
